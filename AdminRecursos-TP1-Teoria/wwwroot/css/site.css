@@ -127,6 +127,24 @@ body {
         color: #fdd835;
     }
 
+#estrategia {
+    background-color: #fdd835;
+    border-color: #1a0c21;
+    margin-bottom: 80px;
+}
+
+    #estrategia span, #estrategia p {
+        color: #1a0c21
+    }
+
+    #estrategia li {
+        margin-bottom: 1rem;
+    }
+
+    #estrategia li:last-of-type {
+        margin-bottom: 0;
+    }
+
 .flecha-dropdown {
     font-size: 0.8em;
     margin-left: 5px;
@@ -296,7 +314,7 @@ body {
 .seccion-destacada {
     background-color: #1a0c21; /* Un color morado similar al de la imagen */
     padding: 30px;
-    margin-top: 20px; /* Espacio entre las secciones */
+    margin-bottom: 20px; /* Espacio entre las secciones */
     border: 3px solid #00E5FF; /* Borde verde */
     border-radius: 8px; /* Bordes redondeados */
 }

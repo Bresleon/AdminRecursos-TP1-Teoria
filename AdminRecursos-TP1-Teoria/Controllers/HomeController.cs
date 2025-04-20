@@ -28,7 +28,7 @@ namespace AdminRecursos_TP1_Teoria.Controllers
             return View();
         }
 
-        public IActionResult Alianzas()
+        public IActionResult ObjetivosYEstrategias()
         {
             return View();
         }
