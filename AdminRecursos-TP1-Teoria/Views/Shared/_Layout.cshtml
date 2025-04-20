@@ -8,48 +8,43 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AdminRecursos_TP1_Teoria.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AdminRecursos_TP1_Teoria</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Alianzas">Alianzas</a>
-                        </li>
-                    </ul>
-                </div>
+<body class="bg-body-secondary">
+    <header class="header-principal">
+        <div class="contenedor-header">
+            <div class="logo">
+                <img src="/logo-hermetech.png" alt="Logo de Hermetech">
             </div>
-        </nav>
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li class="dropdown">
+                        <a href="#">Content management <span class="flecha-dropdown">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sub-opción 1</a></li>
+                            <li><a href="#">Sub-opción 2</a></li>
+                            <li><a href="#">Otra sub-opción</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+   
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - AdminRecursos_TP1_Teoria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <br />
-            <p> Contacto:
-            <br />
-                381-000-0000 / empresa@contacto.com
-            </p>
+    <footer class="footer-oscuro mt-5">
+        <div class="contenedor-footer">
+            <p>&copy; 2025 Hermetech. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
