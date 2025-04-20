@@ -18,11 +18,6 @@ namespace AdminRecursos_TP1_Teoria.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult NuestraFilosofia()
         {
             return View();

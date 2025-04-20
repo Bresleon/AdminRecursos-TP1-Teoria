@@ -42,7 +42,7 @@ body {
     .columna.derecha p {
         font-size: 1.1em;
         line-height: 1.6;
-        color: #555; /* Un color grisáceo para el párrafo */
+        color: #1a0c21;
         margin-top: 0;
     }
 
@@ -80,7 +80,7 @@ body {
 }
 
     .contenedor-texto > span {
-        color: #00E5FF; /* Color verde para el hashtag */
+        color: #00E5FF;
         font-size: 1.5rem;
         font-weight: bold;
         margin-right: 15px;
@@ -259,7 +259,7 @@ body {
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 25px solid #00a878; /* Un color verde similar al de la imagen */
+    border-left: 25px solid #1a0c21; /* Un color verde similar al de la imagen */
 }
 
 
