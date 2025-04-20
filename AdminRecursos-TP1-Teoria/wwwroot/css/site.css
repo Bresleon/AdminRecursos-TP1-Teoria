@@ -12,6 +12,21 @@ body {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+.barra-destacada {
+    background-color: #00E5FF; /* Color verde brillante */
+    color: #1a0c21; /* Color negro para el texto */
+    padding: 20px; /* Espacio interno alrededor del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 5px; /* Bordes ligeramente redondeados (opcional) */
+    margin-bottom: 20px; /* Espacio debajo de la barra (opcional) */
+}
+
+    .barra-destacada h2 {
+        font-size: 2em; /* Tamaño de la fuente del título */
+        font-weight: bold; /* Texto en negrita */
+        margin: 0; /* Elimina los márgenes predeterminados del h2 */
+    }
+
 .columna {
     flex: 1; /* Hace que las columnas ocupen el mismo espacio disponible */
     padding: 20px;
@@ -54,6 +69,23 @@ body {
     padding: 20px;
     background-color: #f4f4f4; /* Un fondo claro para el contenedor */
 }
+
+.contenedor-texto {
+    max-width: 800px;
+    width: inherit;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-gap: 1rem;
+    margin: 0 auto;
+}
+
+    .contenedor-texto > span {
+        color: #00E5FF; /* Color verde para el hashtag */
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 15px;
+        align-content: center;
+    }
 
 .descripcion {
     font-size: 0.9em;
@@ -260,6 +292,23 @@ body {
                 .navegacion-principal ul li a:hover {
                     color: #fdd835; /* Un color de hover */
                 }
+
+.seccion-destacada {
+    background-color: #1a0c21; /* Un color morado similar al de la imagen */
+    padding: 30px;
+    margin-top: 20px; /* Espacio entre las secciones */
+    border: 3px solid #00E5FF; /* Borde verde */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+    .seccion-destacada p {
+        color: #fff; /* Color blanco para el texto principal */
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin: 0; /* Elimina los márgenes por defecto del párrafo */
+        display: inline; /* Para que el párrafo esté en línea con el hashtag */
+        align-content: center;
+    }
 
 .section-dos-columnas {
     display: flex;

@@ -23,7 +23,7 @@ namespace AdminRecursos_TP1_Teoria.Controllers
             return View();
         }
 
-        public IActionResult Nosotros()
+        public IActionResult NuestraFilosofia()
         {
             return View();
         }
