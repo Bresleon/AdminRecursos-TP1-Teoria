@@ -18,6 +18,11 @@ namespace AdminRecursos_TP1_Teoria.Controllers
             return View();
         }
 
+        public IActionResult NuestraEmpresa()
+        {
+            return View();
+        }
+
         public IActionResult NuestraFilosofia()
         {
             return View();
