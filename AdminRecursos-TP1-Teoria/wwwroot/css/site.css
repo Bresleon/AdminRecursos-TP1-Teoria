@@ -46,23 +46,40 @@ body {
         background-color: #eee;
     }
 
+.boton-principal {
+    background-color: #1a237e; /* Mismo color azul oscuro */
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .boton-principal:hover {
+        background-color: #3949ab; /* Un azul ligeramente más claro al pasar el ratón */
+    }
+
 .columna {
     flex: 1; /* Hace que las columnas ocupen el mismo espacio disponible */
     padding: 20px;
 }
 
-    .columna.izquierda h2 {
+    .columna.derecha h2 {
         font-size: 2.5em;
         line-height: 1.2;
-        color: #2c3e50; /* Un color oscuro para el título */
+        color: #2c3e50;  Un color oscuro para el título 
         margin-bottom: 0;
     }
 
-    .columna.derecha p {
-        font-size: 1.1em;
+    .columna.izquierda p {
+        font-size: 1.3em;
         line-height: 1.6;
         color: #1a0c21;
         margin-top: 0;
+        display: inline-block;
+        margin-right: 2rem;
     }
 
 .contenedor-footer {
@@ -100,9 +117,9 @@ body {
 .contenedor-texto {
     max-width: 800px;
     width: inherit;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 25% 75%;
-    grid-column-gap: 1rem;
+    grid-column-gap: 1rem;*/
     margin: 0 auto;
 }
 
@@ -110,8 +127,10 @@ body {
         color: #00E5FF;
         font-size: 1.5rem;
         font-weight: bold;
-        margin-right: 15px;
+        margin-right: 1.5rem;
         align-content: center;
+        display: inline-block;
+        width: 25%;
     }
 
 .descripcion {
@@ -355,6 +374,20 @@ body {
                     color: #fdd835; /* Un color de hover */
                 }
 
+.seccion-cta {
+    background-color: #ffff; /* Un fondo gris claro */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+    .seccion-cta h2 {
+        color: #1a237e; /* Un color azul oscuro similar */
+        font-size: 2em;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
 .seccion-destacada {
     background-color: #1a0c21; /* Un color morado similar al de la imagen */
     padding: 30px;
@@ -423,6 +456,23 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .seccion-cta h2 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .boton-principal {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .contenedor-texto p {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
